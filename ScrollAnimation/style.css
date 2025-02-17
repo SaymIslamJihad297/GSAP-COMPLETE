@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background: black;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    background: blue;
+    display: flex;
+    align-items: center;
+    font-size: 25vw;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+#page3 {
+    height: 100%;
+    width: 100%;
+    background: green;
+}
