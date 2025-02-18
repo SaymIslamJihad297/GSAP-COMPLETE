@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1578128178799-ffbb862243c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cursor {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+#nav i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.281);
+    position: fixed;
+    top: 0;
+    right: -40%;
+    backdrop-filter: blur(20px);
+    padding: 90px 50px;
+}
+
+#menu i {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#menu h4 {
+    font-size: 3rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #menu h4 {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
