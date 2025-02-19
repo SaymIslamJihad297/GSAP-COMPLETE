@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaTToo</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+
+<body class="overflow-x-hidden cursor-none" id="main">
+    <div id="cursor" class="h-10 w-10 border-2 rounded-full fixed z-9 flex justify-center items-center">
+        <i class="ri-cursor-line"></i>
+    </div>
+    <div id="nav" class="flex justify-between items-center py-5 sticky top-0 z-50">
+        <div id="navFirstDiv" class="flex font-bold">
+            <i class="ri-command-line"></i>
+            <h3>Tatoo Master</h3>
+        </div>
+        <div id="navSecondDiv" class="flex gap-5">
+            <h3>About</h3>
+            <h3>Steps</h3>
+            <h3>Testimonials</h3>
+            <h3>Our App</h3>
+        </div>
+        <div id="navThirdDiv" class="h-10 gap-2 flex justify-center items-center text-white bg-black rounded-md p-3">
+            <i class="ri-apple-fill scale-125"></i>
+            <div>
+                <p class="text-xs">Download on the</p>
+                <h3 class="text-xl">App Store</h3>
+            </div>
+        </div>
+    </div>
+    <section id="firstpage" class="text-black h-screen">
+        <p class="text-xs text-center opacity-[0.5] mt-3">Tattoo master whatever you are</p>
+
+        <!-- <h1 id="TattooText" class="text-9xl text-center font-extrabold">TATTOO</h1> -->
+        <svg viewBox="0 0 500 200">
+            <path id="curvePath" d="M-230,200 Q350,-40 460,170" fill="transparent" stroke-dasharray="5,5" />
+            <g id="TattoGroup"">
+                    <text class=" text-6xl text-center font-extrabold">
+                <textPath id="TattooText" href="#curvePath" startOffset="50%">TATTOO</textPath>
+                </text>
+            </g>
+        </svg>
+
+        <div id="mainImage" class="scale-[1.5] flex justify-center bg-red-500">
+            <img class="absolute bottom-0 border-b-8 border-x-3 border-t-3 rounded-t-lg bg-white/5 backdrop-blur-sm"
+                src="./man.png" alt="">
+        </div>
+    </section>
+
+    <section id="secondpage">
+        <h1 class="text-3xl font-bold text-center">Worldwide Community</h1>
+
+        <div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
